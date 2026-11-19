@@ -1,0 +1,5 @@
+heic-to 1.6.7 (bundles libheif), unmodified build dist/iife/heic-to.js
+Licence: GNU Lesser General Public License v3.0 (full text below).
+Source code: https://github.com/hoppergee/heic-to (libheif: https://github.com/strukturag/libheif)
+You may replace this file with your own build of the library; the site loads it as a separate file.
+
