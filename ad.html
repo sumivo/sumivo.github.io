@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<title>Advertisement</title>
+<style>html,body{margin:0;padding:0;overflow:hidden;background:transparent}body{display:flex;justify-content:center}</style>
+</head>
+<body>
+<script>
+/* One banner per frame, loaded by /static/js/ads.js into a sandboxed iframe (no top navigation), so ad
+   code can't block, restyle or redirect the page. Only the configured units and script base are accepted:
+   the query just picks a unit (?u=leaderboard|mobile|box). Built from site/config.yaml (ads). */
+(function () {
+  var units = {"box": {"height": 250, "key": "d83c0b114e177038f53e622d32129379", "width": 300}, "leaderboard": {"height": 90, "key": "810a0a8d1c70608fcaea701817e4638c", "width": 728}, "mobile": {"height": 50, "key": "f847dfbf3ff40b2285e436a7f476a672", "width": 320}}, base = "https://bauval.org/22/";
+  var u = units[new URLSearchParams(location.search).get("u")];
+  if (!u) return;
+  window.atOptions = { key: u.key, format: "iframe", height: u.height, width: u.width, params: {} };
+  var js = document.createElement("script");
+  js.src = base + u.key;
+  document.body.appendChild(js);
+})();
+</script>
+</body>
+</html>

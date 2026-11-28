@@ -1,0 +1,4 @@
+qrcode-generator 2.0.4 by Kazuhiko Arase - https://github.com/kazuhikoarase/qrcode-generator
+Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
+(The licence header is also kept at the top of qrcode.js.)
+The word 'QR Code' is a registered trademark of DENSO WAVE INCORPORATED.
